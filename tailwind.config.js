@@ -1,0 +1,105 @@
+module.exports = {
+  purge: [
+    './components/**/*.{vue,js}',
+    './layouts/**/*.vue',
+    './pages/**/*.vue',
+    './plugins/**/*.{js,ts}',
+    './nuxt.config.{js,ts}',
+  ],
+  darkMode: false, // or 'media' or 'class'
+  theme: {
+    fontSize: {
+      '2xs': '10px',
+      'xs': '12px',
+      'sm': '14px',
+      'base': '16px',
+      'lg': '18px',
+      'xl': '20px',
+      '2xl': '24px',
+      '3xl': '32px',
+      '4xl': '40px',
+      '5xl': '48px',
+      '6xl': '56px',
+      '7xl': '64px',
+      '8xl': '72px',
+    },
+    fontFamily: {
+      display: ['Roboto', 'Noto Sans JP', 'sans-serif'],
+      body: ['Roboto', 'Noto Sans JP', 'sans-serif'],
+    },
+    borderWidth: {
+      default: '1px',
+      '0': '0',
+      '2': '2px',
+      '4': '4px',
+    },
+    extend: {
+      colors: {
+        black: '#1a1302',
+        white: '#fff',
+        gray: {
+          50: '#fafafa',
+          100: '#f2f2f2',
+          400: '#efefef',
+          500: '#e3e3e3',
+          700: '#a8a8a8',
+          900: '#9e9e9e',
+        },
+        beige: {
+          400: '#d6b798',
+          900: '#b68b62',
+        },
+        red: {
+          100: '#ffd9d9',
+          900: '#d01010',
+        },
+        blue: '#0061b6',
+        lightblue: '#e6eaed',
+      },
+      width: {
+        'wrap': '656px',
+      },
+      minWidth: {
+        '335': '335px',
+        '295': '295px',
+        '80': '80px',
+      },
+      borderWidth: {
+        DEFAULT: '1px',
+        '0': '0',
+        '2': '2px',
+        '3': '3px',
+        '4': '4px',
+        '6': '6px',
+        '8': '8px',
+      },
+      zIndex: {
+        '0': 0,
+        '10': 10,
+        '25': 25,
+        '50': 50,
+        '75': 75,
+        '100': 100,
+        '200': 200,
+        '300': 300,
+        '400': 400,
+        '500': 500,
+        '999': 999,
+        '-10': '-10',
+        '-20': '-20',
+        '-30': '-30',
+        '-40': '-40',
+        '-50': '-50',
+        '-90': '-90',
+        '-100': '-100',
+      }
+    },
+  },
+  variants: {
+    extend: {
+      opacity: ['disabled'],
+      backgroundColor: ['disabled'],
+    },
+  },
+  plugins: [],
+}

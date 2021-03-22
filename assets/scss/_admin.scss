@@ -1,0 +1,231 @@
+$xl: 1280px;
+$lg: 1024px;
+$md: 768px;
+$sm: 640px;
+
+@mixin xl {
+  @media (min-width: ($xl)) {
+    @content;
+  }
+}
+@mixin lg {
+  @media (min-width: ($lg)) {
+    @content;
+  }
+}
+@mixin md {
+  @media (min-width: ($md)) {
+    @content;
+  }
+}
+@mixin sm {
+  @media (min-width: ($sm)) {
+    @content;
+  }
+}
+
+body.body-admin {
+  background: #fafafa;
+  color: $primary;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  // Header
+  .header {
+    @include md {
+      height: 54px;
+    }
+    .hamburger {
+      display: block;
+      width: 28px;
+      height: 20px;
+      @include md {
+        display: none;
+      }
+      .line {
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 50%;
+        width: 28px;
+        height: 3px;
+        background-color: $primary;
+        border-radius: 2px;
+        margin-bottom: 8px;
+        &:first-child {
+          transform: translate(-50%, -50%) translateY(-8px);
+        }
+        &.center {
+          transform: translate(-50%, -50%);
+        }
+        &:last-child {
+          transform: translate(-50%, -50%) translateY(8px);
+        }
+      }
+      &.active {
+        > .line {
+          &:first-child {
+            transform: translate(-50%, 0) rotate(45deg);
+          }
+          &.center {
+            display: none;
+          }
+          &:last-child {
+            transform: translate(-50%, 0) rotate(-45deg);
+          }
+        }
+      }
+    }
+    .header-line {
+      width: 2px;
+      height: 20px;
+    }
+  }
+
+  // Input
+  .search_input:before {
+    content: "\e900";
+    font-family: "icomoon";
+    font-weight: normal;
+  }
+
+  .file-box {
+    &::after {
+      content: "";
+      position: absolute;
+      left: 10px;
+      right: 10px;
+      top: 10px;
+      bottom: 10px;
+      border: 1px dashed #efefef;
+      padding: 3px;
+      margin: -5px;
+      border-radius: 4px;
+      z-index: 0;
+    }
+  }
+
+  // Select
+  .select-box {
+    background: #fff url(../images/arrow_drop_down.svg) no-repeat;
+    background-size: 24px, 100%;
+    background-position: center right 16px;
+  }
+
+  .custom-checkbox {
+    user-select: none;
+    input {
+      display: none;
+    }
+    .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 22px;
+      width: 22px;
+      border: solid 2px #979797;
+      border-radius: 2px;
+      box-sizing: border-box;
+      &:after {
+        content: "";
+        position: absolute;
+        left: 5px;
+        top: 0px;
+        width: 8px;
+        height: 15px;
+        border: solid #fff;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+        opacity: 0;
+      }
+    }
+  }
+
+  .custom-checkbox input:checked + .checkmark {
+    background: #1a1302;
+    border-color: #1a1302;
+  }
+
+  .custom-checkbox input:checked + .checkmark:after {
+    opacity: 1;
+  }
+
+  /* ラジオボタン01 */
+  input[type="radio"].radio-single {
+    display: none;
+  }
+  .custom-radio {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 0 0 28px;
+    position: relative;
+    width: auto;
+  }
+  .custom-radio::before {
+    background: #fff;
+    border: 2px solid #979797;
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 22px;
+    left: 0;
+    margin-top: -10px;
+    position: absolute;
+    top: 50%;
+    width: 22px;
+  }
+  .custom-radio::after {
+    background: #1a1302;
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 12px;
+    left: 5px;
+    margin-top: -5px;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    width: 12px;
+  }
+
+  input[type="radio"].radio-single:checked + .custom-radio::before {
+    border: 2px solid #1a1302;
+  }
+
+  input[type="radio"].radio-single:checked + .custom-radio::after {
+    opacity: 1;
+  }
+
+  // Sidebar
+  .sidebar {
+    width: 280px;
+    &-fixed {
+      width: 280px;
+    }
+    &-top {
+      margin-top: 140px;
+    }
+  }
+
+  .thumb-card {
+    &__link {
+      width: calc(100% - 64px);
+    }
+    &__thumb {
+      max-width: 80px;
+      width: 80px;
+      height: 80px;
+      img {
+        height: 80px;
+      }
+    }
+    &__col {
+      width: calc(100% - 88px);
+      padding-left: 8px;
+    }
+    &__txt {
+      width: calc(100% - 64px);
+      padding-left: 8px;
+    }
+  }
+}

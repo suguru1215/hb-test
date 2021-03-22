@@ -1,0 +1,35 @@
+{
+  "name": "hairbook_component",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "export": "nuxt export",
+    "serve": "nuxt serve",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@mdi/font": "^5.9.55",
+    "firebase": "^8.2.6",
+    "nuxt": "^2.14.12",
+    "nuxt-webfontloader": "^1.1.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/style-resources": "^1.0.0",
+    "@nuxtjs/tailwindcss": "^3.4.2",
+    "@tailwindcss/postcss7-compat": "^2.0.2",
+    "@vue/test-utils": "^1.0.3",
+    "autoprefixer": "^9.8.6",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^26.0.1",
+    "jest": "^26.0.1",
+    "node-sass": "^5.0.0",
+    "nuxt-sass-resources-loader": "^2.0.5",
+    "postcss": "^7.0.35",
+    "sass-loader": "^10.1.1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
+    "vue-jest": "^3.0.4"
+  }
+}
