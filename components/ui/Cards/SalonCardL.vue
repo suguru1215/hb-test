@@ -29,9 +29,12 @@
       >
         <div class="flex flex-wrap justify-between">
           <h3 class="text-xl font-bold mb-3 card-title">
-            <a href="#" class="block w-full h-full text-black"
-              >Stujio 渋谷</a
+            <nuxt-link
+              to="/salons"
+              class="block w-full h-full text-black"
             >
+              Stujio 渋谷
+            </nuxt-link>
           </h3>
           <span class="relative bookmark">
             <a href="#" class="inline-block p-2 rounded">
