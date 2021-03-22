@@ -117,9 +117,8 @@
             <ul class="w-full md:w-10/12 flex flex-wrap relative mx-auto">
               <li class="w-full px-0 md:px-4">
                 <nuxt-link
-                  to="staff"
+                  to="/salon/staff"
                   class="block"
-                  append
                 >
                   <div class="flex flex-wrap rounded shadow p-2 thumb-card">
                     <div
