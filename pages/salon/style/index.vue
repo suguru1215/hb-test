@@ -116,35 +116,41 @@
             <h3 class="text-lg font-bold mb-4 md:mb-6">スタッフ</h3>
             <ul class="w-full md:w-10/12 flex flex-wrap relative mx-auto">
               <li class="w-full px-0 md:px-4">
-                <div class="flex flex-wrap rounded shadow p-2 thumb-card">
-                  <div
-                    class="overflow-hidden rounded-lg thumb-card__thumb staff-thumb"
-                  >
-                    <img
-                      src="~/assets/images/staff_01.jpg"
-                      class="w-full object-cover object-center staff"
-                      alt=""
-                    />
+                <nuxt-link
+                  to="staff"
+                  class="block"
+                  append
+                >
+                  <div class="flex flex-wrap rounded shadow p-2 thumb-card">
+                    <div
+                      class="overflow-hidden rounded-lg thumb-card__thumb staff-thumb"
+                    >
+                      <img
+                        src="~/assets/images/staff_01.jpg"
+                        class="w-full object-cover object-center staff"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      class="relative flex flex-col font-bold thumb-card__col"
+                    >
+                      <span class="block text-xs mb-1 text-beige-900">店長</span>
+                      <h3 class="text-base mb-1">樋口 希世　Kiyo Higuchi</h3>
+                      <p class="text-xs font-normal">
+                        宮崎出身 O型<br />
+                        子供の頃から美容室という場所が大好きで、そんな大好きな場所で日々過ごせる事に幸せを感じています☆
+                      </p>
+                      <p class="text-xs font-normal my-2">
+                        ※指名料金：¥1,080（税込）
+                      </p>
+                      <p class="text-xs text-right">
+                        <a href="#" class="inline-block py-2 px-6 btn-primary rounded"
+                          >指名予約</a
+                        >
+                      </p>
+                    </div>
                   </div>
-                  <div
-                    class="relative flex flex-col font-bold thumb-card__col"
-                  >
-                    <span class="block text-xs mb-1 text-beige-900">店長</span>
-                    <h3 class="text-base mb-1">樋口 希世　Kiyo Higuchi</h3>
-                    <p class="text-xs font-normal">
-                      宮崎出身 O型<br />
-                      子供の頃から美容室という場所が大好きで、そんな大好きな場所で日々過ごせる事に幸せを感じています☆
-                    </p>
-                    <p class="text-xs font-normal my-2">
-                      ※指名料金：¥1,080（税込）
-                    </p>
-                    <p class="text-xs text-right">
-                      <a href="#" class="inline-block py-2 px-6 btn-primary rounded"
-                        >指名予約</a
-                      >
-                    </p>
-                  </div>
-                </div>
+                </nuxt-link>
               </li>
             </ul>
           </section>
