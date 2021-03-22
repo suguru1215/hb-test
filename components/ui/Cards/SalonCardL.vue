@@ -30,7 +30,7 @@
         <div class="flex flex-wrap justify-between">
           <h3 class="text-xl font-bold mb-3 card-title">
             <nuxt-link
-              to="/salons"
+              to="/salon"
               class="block w-full h-full text-black"
             >
               Stujio 渋谷
