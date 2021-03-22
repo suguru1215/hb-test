@@ -10,7 +10,7 @@
               <h3 class="text-base mb-2 text-beige-900 font-bold">
                 水分量を増やして潤いある髪に
               </h3>
-              <h2 class="text-xl md:text-3xl mb-4 md:mb-6 font-bold">
+              <h2 class="text-xl md:text-2xl mb-4 md:mb-6 font-bold">
                 水素トリートメントで、髪の内部から水素と酸素で水を発生させます。
               </h2>
             </div>
@@ -32,7 +32,7 @@
               <h3 class="text-base mb-2 text-beige-900 font-bold">
                 水素クレンジングで汚れを除去
               </h3>
-              <h2 class="text-xl md:text-3xl mb-4 md:mb-6 font-bold">
+              <h2 class="text-xl md:text-2xl mb-4 md:mb-6 font-bold">
                 毛穴に詰まった汚れを取り除いてクセのない髪を導きます。
               </h2>
             </div>
@@ -54,7 +54,7 @@
               <h3 class="text-base mb-2 text-beige-900 font-bold">
                 抜群のアクセス
               </h3>
-              <h2 class="text-xl md:text-3xl mb-4 md:mb-6 font-bold">
+              <h2 class="text-xl md:text-2xl mb-4 md:mb-6 font-bold">
                 明治神宮前、渋谷駅徒歩5分の場所で最新の髪質改善をお試しください。
               </h2>
             </div>
