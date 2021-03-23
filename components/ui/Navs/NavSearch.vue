@@ -11,7 +11,7 @@
         <dt>キーワード</dt>
         <dd>なし</dd>
       </dl>
-      <a href="#" class="block p-2 w-full reserve-btn">条件変更</a>
+      <a href="#" class="text-center font-bold block p-2 w-full rounded btn-primary">条件変更</a>
     </div>
   </aside>
 </template>
